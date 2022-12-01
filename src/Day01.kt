@@ -8,7 +8,8 @@ fun main() {
                     acc.last().add(s.toInt())
                 }
                 acc
-            }.maxOfOrNull { it.sum() } ?: 0
+            }
+            .maxOfOrNull { it.sum() } ?: 0
     }
 
     fun part2(input: List<String>): Int {
@@ -20,7 +21,8 @@ fun main() {
                     acc.last().add(s.toInt())
                 }
                 acc
-            }.map { it.sum() }
+            }
+            .map { it.sum() }
             .sortedDescending()
             .take(3)
             .sum()
