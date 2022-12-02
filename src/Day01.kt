@@ -28,7 +28,6 @@ fun main() {
             .sum()
     }
 
-    // test if implementation meets criteria from the description, like:
     val testInput = readInput("01.test")
     check(part1(testInput) == 24000)
 
